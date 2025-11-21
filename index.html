@@ -22,19 +22,64 @@
   </head>
   <body>
     <header>
-      <nav class="navbar bg-body-tertiary fixed-top">
+      <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Offcanvas navbar</a>
+          <a class="navbar-brand" href="#">Navbar</a>
+
           <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasNavbar"
             aria-controls="offcanvasNavbar"
+            aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
           <div
             class="offcanvas offcanvas-end"
             tabindex="-1"
@@ -107,6 +152,79 @@
                 <button class="btn btn-outline-success" type="submit">
                   Search
                 </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav> -->
+
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+
+          <!-- Correct Offcanvas Trigger -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- FULL Offcanvas -->
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title">Menu</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+              ></button>
+            </div>
+
+            <div class="offcanvas-body">
+              <!-- Normal Navbar Items -->
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    data-bs-toggle="dropdown"
+                  >
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+
+              <!-- Search -->
+              <form class="d-flex">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                />
+                <button class="btn btn-outline-success">Search</button>
               </form>
             </div>
           </div>
@@ -2146,7 +2264,254 @@
       </section>
     </main>
 
-    <footer></footer>
+    <!-- ======== FOOTER ======== -->
+    <footer class="pt-5 pb-4" style="background: #f8f9fc">
+      <div class="container">
+        <div class="row gy-5">
+          <!-- COLUMN 1 -->
+          <div class="col-md-3">
+            <img
+              src="https://www.johnacademy.co.uk/wp-content/uploads/2024/02/logo.png"
+              class="img-fluid mb-3"
+              alt="Logo"
+              width="141"
+            />
+
+            <ul class="list-unstyled text-secondary small">
+              <li>Dawson House, 5 Jewry St, London EC3N 2EX</li>
+              <li>info@johnacademy.co.uk</li>
+              <li>020 3744 3990</li>
+            </ul>
+
+            <!-- Social Icons -->
+            <div class="d-flex gap-2 mt-3">
+              <a href="#" class="text-dark fs-5"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="text-dark fs-5"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-dark fs-5"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="#" class="text-dark fs-5"
+                ><i class="fab fa-pinterest-p"></i
+              ></a>
+              <a href="#" class="text-dark fs-5"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="text-dark fs-5"
+                ><i class="fab fa-tumblr"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- COLUMN 2 -->
+          <div class="col-md-3">
+            <h5 class="fw-bold mb-1">Other Links</h5>
+            <img
+              src="https://www.johnacademy.co.uk/wp-content/uploads/2024/02/line.png"
+              class="mb-2"
+              width="74"
+            />
+
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="#"
+                  class="text-secondary text-decoration-none d-block py-1 small"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-secondary text-decoration-none d-block py-1 small"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-secondary text-decoration-none d-block py-1 small"
+                  >Redeem Voucher</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-secondary text-decoration-none d-block py-1 small"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-secondary text-decoration-none d-block py-1 small"
+                  >FAQ</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-secondary text-decoration-none d-block py-1 small"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-secondary text-decoration-none d-block py-1 small"
+                  >Terms & Conditions</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-secondary text-decoration-none d-block py-1 small"
+                  >Cookie Policy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-secondary text-decoration-none d-block py-1 small"
+                  >Modern Slavery Statement</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- COLUMN 3 -->
+          <div class="col-md-3">
+            <h5 class="fw-bold mb-1">Important Links</h5>
+            <img
+              src="https://www.johnacademy.co.uk/wp-content/uploads/2024/02/line.png"
+              class="mb-2"
+              width="74"
+            />
+
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="#"
+                  class="text-secondary text-decoration-none d-block py-1 small"
+                  >All Courses</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-secondary text-decoration-none d-block py-1 small"
+                  >Career Transformation Bundles</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-secondary text-decoration-none d-block py-1 small"
+                  >Membership Plans</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-secondary text-decoration-none d-block py-1 small"
+                  >Lifetime Subscription</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-secondary text-decoration-none d-block py-1 small"
+                  >Certificate & Transcript</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-secondary text-decoration-none d-block py-1 small"
+                  >Free Student ID Card</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-secondary text-decoration-none d-block py-1 small"
+                  >Enrolment Letter</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-secondary text-decoration-none d-block py-1 small"
+                  >Refer Friends & Earn Money</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-secondary text-decoration-none d-block py-1 small"
+                  >Affiliate Programme</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-secondary text-decoration-none d-block py-1 small"
+                  >Write For Us</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- COLUMN 4 -->
+          <div class="col-md-3">
+            <h5 class="fw-bold mb-1">Certificate Code</h5>
+            <img
+              src="https://www.johnacademy.co.uk/wp-content/uploads/2024/02/line.png"
+              class="mb-3"
+              width="74"
+            />
+
+            <form action="#" method="get" class="d-flex mb-3">
+              <input
+                type="text"
+                class="form-control form-control-sm"
+                placeholder="Enter Certificate Code"
+              />
+              <button class="btn btn-dark btn-sm ms-2">Validate</button>
+            </form>
+
+            <h6 class="fw-bold mb-1">Excellent Service</h6>
+
+            <!-- Rating -->
+            <div class="text-warning mb-2">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+
+            <div class="mb-3 fw-bold small">Nov 2025</div>
+
+            <a href="#">
+              <img
+                src="https://www.johnacademy.co.uk/wp-content/uploads/2024/02/Frame-1000004465-1.png"
+                width="154"
+                class="img-fluid"
+              />
+            </a>
+          </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="text-center mt-5 pt-3 border-top small text-secondary">
+          © JOHN ACADEMY IS A TRADING NAME OF ADAMS ACADEMY INC. LTD
+        </div>
+      </div>
+    </footer>
 
     <!-- Bootstrap Toast (auto hide in 3s) -->
     <div class="toast-container position-fixed bottom-0 end-0 p-3">

@@ -122,63 +122,67 @@
         >
           <div class="container">
             <div class="row justify-content-center align-items-center gap-3">
-              <h1 class="display-5 fw-bold">All Courses</h1>
-              <div class="col-md-6 mx-auto">
-                <div class="p-2">
-                  <!-- form -->
-                  <form class="row g-1 p-2 rounded-pill">
-                    <div class="col-9">
-                      <!-- input -->
-                      <div
-                        class="input-group border-md-0 border rounded-pill bg-white"
-                      >
-                        <!-- input group -->
-                        <span
-                          class="input-group-text bg-transparent border-0 pe-1 ps-md-3 ps-md-0 bg-white"
-                          id="searchJob"
+              <h1 class="display-6 fw-bold">What Do You Want To Learn?</h1>
+              <div class="row">
+                <div class="col-md-6 mx-auto">
+                  <div class="p-2">
+                    <!-- form -->
+                    <form class="row g-1 p-2 rounded-pill">
+                      <div class="col-9">
+                        <!-- input -->
+                        <div
+                          class="input-group border-md-0 border rounded-pill bg-white"
                         >
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="14"
-                            height="14"
-                            fill="currentColor"
-                            class="bi bi-search"
-                            viewBox="0 0 16 16"
+                          <!-- input group -->
+                          <span
+                            class="input-group-text bg-transparent border-0 pe-1 ps-md-3 ps-md-0 bg-white"
+                            id="searchJob"
                           >
-                            <path
-                              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
-                            ></path>
-                          </svg>
-                        </span>
-                        <!-- search -->
-                        <input
-                          type="search"
-                          class="form-control rounded-2 border-0 ps-3 form-focus-none ms-2"
-                          placeholder="Job Title"
-                          aria-label="Job Title"
-                          aria-describedby="searchJob"
-                        />
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="14"
+                              height="14"
+                              fill="currentColor"
+                              class="bi bi-search"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                              ></path>
+                            </svg>
+                          </span>
+                          <!-- search -->
+                          <input
+                            type="search"
+                            class="form-control rounded-2 border-0 ps-3 form-focus-none ms-2"
+                            placeholder="Job Title"
+                            aria-label="Job Title"
+                            aria-describedby="searchJob"
+                          />
+                        </div>
                       </div>
-                    </div>
 
-                    <div class="col-3 text-end d-grid">
-                      <!-- button -->
-                      <button
-                        class="btn text-white rounded-end-pill rounded-3 w-100"
-                        style="background-color: #f16232; padding-inline: 12px"
-                      >
-                        Search
-                      </button>
-                    </div>
-                  </form>
+                      <div class="col-3 text-end d-grid">
+                        <!-- button -->
+                        <button
+                          class="btn text-white rounded-end-pill rounded-3 w-100"
+                          style="
+                            background-color: #f16232;
+                            padding-inline: 12px;
+                          "
+                        >
+                          Search
+                        </button>
+                      </div>
+                    </form>
+                  </div>
                 </div>
               </div>
               <div
                 class="px-lg-4 py-2 text-white rounded-3 text-uppercase"
                 style="width: fit-content; background: #f16232"
               >
-                GET ACCESS TO 3000+ ONLINE COURSES FOR A YEAR FOR JUST £49. GET
-                NOW
+                Get Lifetime Learner Package <span class="text-decoration-underline">Learn More</span>
               </div>
             </div>
           </div>
@@ -190,33 +194,37 @@
         <div class="main-course-sec-container">
           <div class="container">
             <div class="row">
-              <div class="d-none d-lg-block col-lg-4">
-                <div
-                  class="rounded p-4"
-                  style="border: 1px solid #ddd"
-                >
-                  <h3 class="fs-4 fw-bold text-dark mb-3 text-center">
+              <div class="col-12 d-lg-block col-lg-4 px-4">
+                <div class="rounded" style="border: 1px solid #ddd">
+                  <h3
+                    class="fs-4 fw-bold text-dark mb-0 text-center rounded-top-4 p-4 text-white border-bottom"
+                    style="background: #fe7439"
+                  >
                     Search by category
                   </h3>
 
-                  <div
-                    class="w-100 mb-3"
-                    style="border-bottom: 1px solid #6b7280; height: 1px"
-                  ></div>
-
                   <div>
-                    <div class="d-flex flex-column gap-2">
-                        
+                    <div
+                      class="d-flex flex-column justify-content-center px-lg-4 gap-2"
+                      style="
+                        max-height: 350px;
+                        overflow-y: auto;
+                        scrollbar-width: thin;
+                        padding-right: 6px;
+                      "
+                    >
                       <!-- Option 1 -->
                       <label
                         class="d-flex align-items-center px-2 py-1 rounded py-4 border-bottom"
                         style="cursor: pointer; transition: 0.2s"
                       >
-                        <input type="checkbox" class="form-check-input me-2" />
-                        <span class="fs-6"
-                          >Construction and Trades
-                          <span class="text-muted">(54)</span></span
-                        >
+                        <input
+                          type="checkbox"
+                          class="form-check-input me-2 border-danger"
+                        />
+                        <span class="fs-6 fw-bold" style="color: #fe7439">
+                          Construction and Trades
+                        </span>
                       </label>
 
                       <!-- Option 1 -->
@@ -224,11 +232,13 @@
                         class="d-flex align-items-center px-2 py-1 rounded py-4 border-bottom"
                         style="cursor: pointer; transition: 0.2s"
                       >
-                        <input type="checkbox" class="form-check-input me-2" />
-                        <span class="fs-6"
-                          >Construction and Trades
-                          <span class="text-muted">(54)</span></span
-                        >
+                        <input
+                          type="checkbox"
+                          class="form-check-input me-2 border-danger"
+                        />
+                        <span class="fs-6 fw-bold" style="color: #fe7439">
+                          Construction and Trades
+                        </span>
                       </label>
 
                       <!-- Option 1 -->
@@ -236,11 +246,13 @@
                         class="d-flex align-items-center px-2 py-1 rounded py-4 border-bottom"
                         style="cursor: pointer; transition: 0.2s"
                       >
-                        <input type="checkbox" class="form-check-input me-2" />
-                        <span class="fs-6"
-                          >Construction and Trades
-                          <span class="text-muted">(54)</span></span
-                        >
+                        <input
+                          type="checkbox"
+                          class="form-check-input me-2 border-danger"
+                        />
+                        <span class="fs-6 fw-bold" style="color: #fe7439">
+                          Construction and Trades
+                        </span>
                       </label>
 
                       <!-- Option 1 -->
@@ -248,11 +260,13 @@
                         class="d-flex align-items-center px-2 py-1 rounded py-4 border-bottom"
                         style="cursor: pointer; transition: 0.2s"
                       >
-                        <input type="checkbox" class="form-check-input me-2" />
-                        <span class="fs-6"
-                          >Construction and Trades
-                          <span class="text-muted">(54)</span></span
-                        >
+                        <input
+                          type="checkbox"
+                          class="form-check-input me-2 border-danger"
+                        />
+                        <span class="fs-6 fw-bold" style="color: #fe7439">
+                          Construction and Trades
+                        </span>
                       </label>
 
                       <!-- Option 1 -->
@@ -260,11 +274,13 @@
                         class="d-flex align-items-center px-2 py-1 rounded py-4 border-bottom"
                         style="cursor: pointer; transition: 0.2s"
                       >
-                        <input type="checkbox" class="form-check-input me-2" />
-                        <span class="fs-6"
-                          >Construction and Trades
-                          <span class="text-muted">(54)</span></span
-                        >
+                        <input
+                          type="checkbox"
+                          class="form-check-input me-2 border-danger"
+                        />
+                        <span class="fs-6 fw-bold" style="color: #fe7439">
+                          Construction and Trades
+                        </span>
                       </label>
 
                       <!-- Option 1 -->
@@ -272,11 +288,13 @@
                         class="d-flex align-items-center px-2 py-1 rounded py-4 border-bottom"
                         style="cursor: pointer; transition: 0.2s"
                       >
-                        <input type="checkbox" class="form-check-input me-2" />
-                        <span class="fs-6"
-                          >Construction and Trades
-                          <span class="text-muted">(54)</span></span
-                        >
+                        <input
+                          type="checkbox"
+                          class="form-check-input me-2 border-danger"
+                        />
+                        <span class="fs-6 fw-bold" style="color: #fe7439">
+                          Construction and Trades
+                        </span>
                       </label>
 
                       <!-- Option 1 -->
@@ -284,11 +302,13 @@
                         class="d-flex align-items-center px-2 py-1 rounded py-4 border-bottom"
                         style="cursor: pointer; transition: 0.2s"
                       >
-                        <input type="checkbox" class="form-check-input me-2" />
-                        <span class="fs-6"
-                          >Construction and Trades
-                          <span class="text-muted">(54)</span></span
-                        >
+                        <input
+                          type="checkbox"
+                          class="form-check-input me-2 border-danger"
+                        />
+                        <span class="fs-6 fw-bold" style="color: #fe7439">
+                          Construction and Trades
+                        </span>
                       </label>
 
                       <!-- Option 1 -->
@@ -296,11 +316,13 @@
                         class="d-flex align-items-center px-2 py-1 rounded py-4 border-bottom"
                         style="cursor: pointer; transition: 0.2s"
                       >
-                        <input type="checkbox" class="form-check-input me-2" />
-                        <span class="fs-6"
-                          >Construction and Trades
-                          <span class="text-muted">(54)</span></span
-                        >
+                        <input
+                          type="checkbox"
+                          class="form-check-input me-2 border-danger"
+                        />
+                        <span class="fs-6 fw-bold" style="color: #fe7439">
+                          Construction and Trades
+                        </span>
                       </label>
 
                       <!-- Option 1 -->
@@ -308,31 +330,125 @@
                         class="d-flex align-items-center px-2 py-1 rounded py-4 border-bottom"
                         style="cursor: pointer; transition: 0.2s"
                       >
-                        <input type="checkbox" class="form-check-input me-2" />
-                        <span class="fs-6"
-                          >Construction and Trades
-                          <span class="text-muted">(54)</span></span
-                        >
+                        <input
+                          type="checkbox"
+                          class="form-check-input me-2 border-danger"
+                        />
+                        <span class="fs-6 fw-bold" style="color: #fe7439">
+                          Construction and Trades
+                        </span>
                       </label>
 
+                      <!-- Option 1 -->
+                      <label
+                        class="d-flex align-items-center px-2 py-1 rounded py-4 border-bottom"
+                        style="cursor: pointer; transition: 0.2s"
+                      >
+                        <input
+                          type="checkbox"
+                          class="form-check-input me-2 border-danger"
+                        />
+                        <span class="fs-6 fw-bold" style="color: #fe7439">
+                          Construction and Trades
+                        </span>
+                      </label>
+
+                      <!-- Option 1 -->
+                      <label
+                        class="d-flex align-items-center px-2 py-1 rounded py-4 border-bottom"
+                        style="cursor: pointer; transition: 0.2s"
+                      >
+                        <input
+                          type="checkbox"
+                          class="form-check-input me-2 border-danger"
+                        />
+                        <span class="fs-6 fw-bold" style="color: #fe7439">
+                          Construction and Trades
+                        </span>
+                      </label>
+
+                      <!-- Option 1 -->
+                      <label
+                        class="d-flex align-items-center px-2 py-1 rounded py-4 border-bottom"
+                        style="cursor: pointer; transition: 0.2s"
+                      >
+                        <input
+                          type="checkbox"
+                          class="form-check-input me-2 border-danger"
+                        />
+                        <span class="fs-6 fw-bold" style="color: #fe7439">
+                          Construction and Trades
+                        </span>
+                      </label>
+
+                      <!-- Option 1 -->
+                      <label
+                        class="d-flex align-items-center px-2 py-1 rounded py-4 border-bottom"
+                        style="cursor: pointer; transition: 0.2s"
+                      >
+                        <input
+                          type="checkbox"
+                          class="form-check-input me-2 border-danger"
+                        />
+                        <span class="fs-6 fw-bold" style="color: #fe7439">
+                          Construction and Trades
+                        </span>
+                      </label>
+
+                      <!-- Option 1 -->
+                      <label
+                        class="d-flex align-items-center px-2 py-1 rounded py-4 border-bottom"
+                        style="cursor: pointer; transition: 0.2s"
+                      >
+                        <input
+                          type="checkbox"
+                          class="form-check-input me-2 border-danger"
+                        />
+                        <span class="fs-6 fw-bold" style="color: #fe7439">
+                          Construction and Trades
+                        </span>
+                      </label>
+
+                      <button
+                        type="submit"
+                        class="btn rounded-2 w-100 text-white fw-semibold text-capitalize mb-3"
+                        style="background-color: #fe7439; padding-inline: 12px"
+                      >
+                        Clear filters
+                      </button>
                     </div>
                   </div>
-
-
-
-                  <button class="btn btn-outline-secondary w-100 mt-3">
-                    Clear filters
-                  </button>
                 </div>
               </div>
               <div class="col-12 col-lg-8 p-0">
-                <div class="container py-5">
-                  <div class="row my-4"></div>
+                <div class="container pb-5">
+                  <div class="row my-4">
+                    <div
+                      class="w-100 d-flex w-100 flex-row gap-3 align-items-center justify-content-end"
+                    >
+                      <div
+                        class="d-flex w-100 flex-row gap-3 align-items-center justify-content-end"
+                        style="max-width: fit-content"
+                      >
+                        <label class="form-label m-0" style="font-weight: 600">
+                          Sort by:
+                        </label>
+
+                        <select class="form-select" style="width: auto">
+                          <option>Relevance</option>
+                          <option>Most popular</option>
+                          <option>Alphabetical: A to Z</option>
+                          <option>Alphabetical: Z to A</option>
+                          <option>Price: High to Low</option>
+                          <option>Price: Low to High</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
 
                   <div
                     class="row row-cols-1 row-cols-md-2 row-cols-xl-1 justify-content-center align-items-stretch g-4"
                   >
-                  
                     <div
                       class="d-flex justify-content-center align-items-stretch col"
                     >
@@ -394,8 +510,9 @@
                               9,300 Enrolled</span
                             >
                           </div>
+
                           <div
-                            class="d-none d-xl-block mt-3 align-baseline lh-1 justify-content-between fs-6 my-3"
+                            class="d-none d-xl-block mt-3 align-baseline lh-1 justify-content-between small text-muted my-3"
                           >
                             Description: Train to provide the highest standards
                             of care with our Level 3 Diploma in Health and
@@ -403,15 +520,17 @@
                             Incensu. This online Health and <span>...</span>
                           </div>
                         </div>
+
                         <!-- Card Footer -->
                         <div
                           class="card-footer bg-white px-0 list-view-end d-flex flex-column justify-content-xl-between border-top-0"
                         >
                           <div
-                            class="d-flex justify-content-xl-end justify-content-start mb-3 flex-roew-reverse flex gap-2 align-items-center w-100 fw-semibold"
+                            class="d-flex justify-content-xl-end justify-content-start mb-3 flex-roew-reverse flex gap-2 align-items-end w-100 fw-semibold"
                           >
                             <span
                               class="main-price fs-5 text-decoration-line-through"
+                              style="line-height: 3rem"
                               >£220</span
                             >
                             <span
@@ -432,13 +551,13 @@
                                 padding-inline: 12px;
                               "
                             >
-                              Get Enrolled
+                              View Details
                             </a>
                             <a
                               href="#"
                               class="btn btn-outline-secondary text-inherit text-decoration-none text-black"
                             >
-                              Get Enrolled
+                              Add to Cart
                             </a>
                           </div>
                         </div>
@@ -506,8 +625,9 @@
                               9,300 Enrolled</span
                             >
                           </div>
+
                           <div
-                            class="d-none d-xl-block mt-3 align-baseline lh-1 justify-content-between fs-6 my-3"
+                            class="d-none d-xl-block mt-3 align-baseline lh-1 justify-content-between small text-muted my-3"
                           >
                             Description: Train to provide the highest standards
                             of care with our Level 3 Diploma in Health and
@@ -515,15 +635,17 @@
                             Incensu. This online Health and <span>...</span>
                           </div>
                         </div>
+
                         <!-- Card Footer -->
                         <div
                           class="card-footer bg-white px-0 list-view-end d-flex flex-column justify-content-xl-between border-top-0"
                         >
                           <div
-                            class="d-flex justify-content-xl-end justify-content-start mb-3 flex-roew-reverse flex gap-2 align-items-center w-100 fw-semibold"
+                            class="d-flex justify-content-xl-end justify-content-start mb-3 flex-roew-reverse flex gap-2 align-items-end w-100 fw-semibold"
                           >
                             <span
                               class="main-price fs-5 text-decoration-line-through"
+                              style="line-height: 3rem"
                               >£220</span
                             >
                             <span
@@ -544,13 +666,13 @@
                                 padding-inline: 12px;
                               "
                             >
-                              Get Enrolled
+                              View Details
                             </a>
                             <a
                               href="#"
                               class="btn btn-outline-secondary text-inherit text-decoration-none text-black"
                             >
-                              Get Enrolled
+                              Add to Cart
                             </a>
                           </div>
                         </div>
@@ -618,8 +740,9 @@
                               9,300 Enrolled</span
                             >
                           </div>
+
                           <div
-                            class="d-none d-xl-block mt-3 align-baseline lh-1 justify-content-between fs-6 my-3"
+                            class="d-none d-xl-block mt-3 align-baseline lh-1 justify-content-between small text-muted my-3"
                           >
                             Description: Train to provide the highest standards
                             of care with our Level 3 Diploma in Health and
@@ -627,15 +750,17 @@
                             Incensu. This online Health and <span>...</span>
                           </div>
                         </div>
+
                         <!-- Card Footer -->
                         <div
                           class="card-footer bg-white px-0 list-view-end d-flex flex-column justify-content-xl-between border-top-0"
                         >
                           <div
-                            class="d-flex justify-content-xl-end justify-content-start mb-3 flex-roew-reverse flex gap-2 align-items-center w-100 fw-semibold"
+                            class="d-flex justify-content-xl-end justify-content-start mb-3 flex-roew-reverse flex gap-2 align-items-end w-100 fw-semibold"
                           >
                             <span
                               class="main-price fs-5 text-decoration-line-through"
+                              style="line-height: 3rem"
                               >£220</span
                             >
                             <span
@@ -656,13 +781,13 @@
                                 padding-inline: 12px;
                               "
                             >
-                              Get Enrolled
+                              View Details
                             </a>
                             <a
                               href="#"
                               class="btn btn-outline-secondary text-inherit text-decoration-none text-black"
                             >
-                              Get Enrolled
+                              Add to Cart
                             </a>
                           </div>
                         </div>
@@ -730,8 +855,9 @@
                               9,300 Enrolled</span
                             >
                           </div>
+
                           <div
-                            class="d-none d-xl-block mt-3 align-baseline lh-1 justify-content-between fs-6 my-3"
+                            class="d-none d-xl-block mt-3 align-baseline lh-1 justify-content-between small text-muted my-3"
                           >
                             Description: Train to provide the highest standards
                             of care with our Level 3 Diploma in Health and
@@ -739,15 +865,17 @@
                             Incensu. This online Health and <span>...</span>
                           </div>
                         </div>
+
                         <!-- Card Footer -->
                         <div
                           class="card-footer bg-white px-0 list-view-end d-flex flex-column justify-content-xl-between border-top-0"
                         >
                           <div
-                            class="d-flex justify-content-xl-end justify-content-start mb-3 flex-roew-reverse flex gap-2 align-items-center w-100 fw-semibold"
+                            class="d-flex justify-content-xl-end justify-content-start mb-3 flex-roew-reverse flex gap-2 align-items-end w-100 fw-semibold"
                           >
                             <span
                               class="main-price fs-5 text-decoration-line-through"
+                              style="line-height: 3rem"
                               >£220</span
                             >
                             <span
@@ -768,13 +896,13 @@
                                 padding-inline: 12px;
                               "
                             >
-                              Get Enrolled
+                              View Details
                             </a>
                             <a
                               href="#"
                               class="btn btn-outline-secondary text-inherit text-decoration-none text-black"
                             >
-                              Get Enrolled
+                              Add to Cart
                             </a>
                           </div>
                         </div>
@@ -842,8 +970,9 @@
                               9,300 Enrolled</span
                             >
                           </div>
+
                           <div
-                            class="d-none d-xl-block mt-3 align-baseline lh-1 justify-content-between fs-6 my-3"
+                            class="d-none d-xl-block mt-3 align-baseline lh-1 justify-content-between small text-muted my-3"
                           >
                             Description: Train to provide the highest standards
                             of care with our Level 3 Diploma in Health and
@@ -851,15 +980,17 @@
                             Incensu. This online Health and <span>...</span>
                           </div>
                         </div>
+
                         <!-- Card Footer -->
                         <div
                           class="card-footer bg-white px-0 list-view-end d-flex flex-column justify-content-xl-between border-top-0"
                         >
                           <div
-                            class="d-flex justify-content-xl-end justify-content-start mb-3 flex-roew-reverse flex gap-2 align-items-center w-100 fw-semibold"
+                            class="d-flex justify-content-xl-end justify-content-start mb-3 flex-roew-reverse flex gap-2 align-items-end w-100 fw-semibold"
                           >
                             <span
                               class="main-price fs-5 text-decoration-line-through"
+                              style="line-height: 3rem"
                               >£220</span
                             >
                             <span
@@ -880,13 +1011,13 @@
                                 padding-inline: 12px;
                               "
                             >
-                              Get Enrolled
+                              View Details
                             </a>
                             <a
                               href="#"
                               class="btn btn-outline-secondary text-inherit text-decoration-none text-black"
                             >
-                              Get Enrolled
+                              Add to Cart
                             </a>
                           </div>
                         </div>
@@ -954,8 +1085,9 @@
                               9,300 Enrolled</span
                             >
                           </div>
+
                           <div
-                            class="d-none d-xl-block mt-3 align-baseline lh-1 justify-content-between fs-6 my-3"
+                            class="d-none d-xl-block mt-3 align-baseline lh-1 justify-content-between small text-muted my-3"
                           >
                             Description: Train to provide the highest standards
                             of care with our Level 3 Diploma in Health and
@@ -963,15 +1095,17 @@
                             Incensu. This online Health and <span>...</span>
                           </div>
                         </div>
+
                         <!-- Card Footer -->
                         <div
                           class="card-footer bg-white px-0 list-view-end d-flex flex-column justify-content-xl-between border-top-0"
                         >
                           <div
-                            class="d-flex justify-content-xl-end justify-content-start mb-3 flex-roew-reverse flex gap-2 align-items-center w-100 fw-semibold"
+                            class="d-flex justify-content-xl-end justify-content-start mb-3 flex-roew-reverse flex gap-2 align-items-end w-100 fw-semibold"
                           >
                             <span
                               class="main-price fs-5 text-decoration-line-through"
+                              style="line-height: 3rem"
                               >£220</span
                             >
                             <span
@@ -992,13 +1126,243 @@
                                 padding-inline: 12px;
                               "
                             >
-                              Get Enrolled
+                              View Details
                             </a>
                             <a
                               href="#"
                               class="btn btn-outline-secondary text-inherit text-decoration-none text-black"
                             >
-                              Get Enrolled
+                              Add to Cart
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="d-flex justify-content-center align-items-stretch col"
+                    >
+                      <div class="card card-hover p-3 flex-xl-row gap-xl-2">
+                        <div class="list-view-img h-100">
+                          <a href="#" class="w-100 h-100">
+                            <img
+                              src="assets/imgs/Clinical-Coding-Course.jpg"
+                              alt="course-img"
+                              height="100%"
+                              width="100%"
+                              class="card-img-top h-100 w-100 object-fit-cover"
+                            />
+                          </a>
+                        </div>
+                        <!-- Card Body -->
+                        <div
+                          class="card-body list-view-content px-0 pb-0 text-black"
+                        >
+                          <h5 class="mb-2 text-truncate-line-2">
+                            <a href="#" class="text-black text-decoration-none"
+                              >How to easily create a website with JavaScript
+                            </a>
+                          </h5>
+
+                          <div
+                            class="mt-3 d-flex align-baseline lh-1 justify-content-between"
+                          >
+                            <span
+                              class="fs-6 d-flex gap-2 justify-content-center align-items-center"
+                            >
+                              <span
+                                class="d-flex justify-content-center align-items-center"
+                                style="width: 20px; height: 20px"
+                              >
+                                <svg
+                                  fill="#f16232"
+                                  viewBox="0 0 32 32"
+                                  version="1.1"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  class="w-100 h-100 object-fit-cover"
+                                >
+                                  <g
+                                    id="SVGRepo_bgCarrier"
+                                    stroke-width="0"
+                                  ></g>
+                                  <g
+                                    id="SVGRepo_tracerCarrier"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  ></g>
+                                  <g id="SVGRepo_iconCarrier">
+                                    <path
+                                      d="M23.313 26.102l-6.296-3.488c2.34-1.841 2.976-5.459 2.976-7.488v-4.223c0-2.796-3.715-5.91-7.447-5.91-3.73 0-7.544 3.114-7.544 5.91v4.223c0 1.845 0.78 5.576 3.144 7.472l-6.458 3.503s-1.688 0.752-1.688 1.689v2.534c0 0.933 0.757 1.689 1.688 1.689h21.625c0.931 0 1.688-0.757 1.688-1.689v-2.534c0-0.994-1.689-1.689-1.689-1.689zM23.001 30.015h-21.001v-1.788c0.143-0.105 0.344-0.226 0.502-0.298 0.047-0.021 0.094-0.044 0.139-0.070l6.459-3.503c0.589-0.32 0.979-0.912 1.039-1.579s-0.219-1.32-0.741-1.739c-1.677-1.345-2.396-4.322-2.396-5.911v-4.223c0-1.437 2.708-3.91 5.544-3.91 2.889 0 5.447 2.44 5.447 3.91v4.223c0 1.566-0.486 4.557-2.212 5.915-0.528 0.416-0.813 1.070-0.757 1.739s0.446 1.267 1.035 1.589l6.296 3.488c0.055 0.030 0.126 0.063 0.184 0.089 0.148 0.063 0.329 0.167 0.462 0.259v1.809zM30.312 21.123l-6.39-3.488c2.34-1.841 3.070-5.459 3.070-7.488v-4.223c0-2.796-3.808-5.941-7.54-5.941-2.425 0-4.904 1.319-6.347 3.007 0.823 0.051 1.73 0.052 2.514 0.302 1.054-0.821 2.386-1.308 3.833-1.308 2.889 0 5.54 2.47 5.54 3.941v4.223c0 1.566-0.58 4.557-2.305 5.915-0.529 0.416-0.813 1.070-0.757 1.739 0.056 0.67 0.445 1.267 1.035 1.589l6.39 3.488c0.055 0.030 0.126 0.063 0.184 0.089 0.148 0.063 0.329 0.167 0.462 0.259v1.779h-4.037c0.61 0.46 0.794 1.118 1.031 2h3.319c0.931 0 1.688-0.757 1.688-1.689v-2.503c-0.001-0.995-1.689-1.691-1.689-1.691z"
+                                    ></path>
+                                  </g>
+                                </svg>
+                              </span>
+                              9,300 Enrolled</span
+                            >
+                          </div>
+
+                          <div
+                            class="d-none d-xl-block mt-3 align-baseline lh-1 justify-content-between small text-muted my-3"
+                          >
+                            Description: Train to provide the highest standards
+                            of care with our Level 3 Diploma in Health and
+                            Social Care, accredited by CPD, UKRLP, AoHT, and
+                            Incensu. This online Health and <span>...</span>
+                          </div>
+                        </div>
+
+                        <!-- Card Footer -->
+                        <div
+                          class="card-footer bg-white px-0 list-view-end d-flex flex-column justify-content-xl-between border-top-0"
+                        >
+                          <div
+                            class="d-flex justify-content-xl-end justify-content-start mb-3 flex-roew-reverse flex gap-2 align-items-end w-100 fw-semibold"
+                          >
+                            <span
+                              class="main-price fs-5 text-decoration-line-through"
+                              style="line-height: 3rem"
+                              >£220</span
+                            >
+                            <span
+                              class="discounted-price fs-1 fw-bold"
+                              style="color: #f16232"
+                              >£30</span
+                            >
+                          </div>
+
+                          <div
+                            class="d-flex align-items-end justify-content-between gap-xl-2 flex-xl-column w-100 align-self-xl-end"
+                          >
+                            <a
+                              class="btn text-white"
+                              style="
+                                width: fit-content;
+                                background-color: #fe7439;
+                                padding-inline: 12px;
+                              "
+                            >
+                              View Details
+                            </a>
+                            <a
+                              href="#"
+                              class="btn btn-outline-secondary text-inherit text-decoration-none text-black"
+                            >
+                              Add to Cart
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="d-flex justify-content-center align-items-stretch col"
+                    >
+                      <div class="card card-hover p-3 flex-xl-row gap-xl-2">
+                        <div class="list-view-img h-100">
+                          <a href="#" class="w-100 h-100">
+                            <img
+                              src="assets/imgs/Clinical-Coding-Course.jpg"
+                              alt="course-img"
+                              height="100%"
+                              width="100%"
+                              class="card-img-top h-100 w-100 object-fit-cover"
+                            />
+                          </a>
+                        </div>
+                        <!-- Card Body -->
+                        <div
+                          class="card-body list-view-content px-0 pb-0 text-black"
+                        >
+                          <h5 class="mb-2 text-truncate-line-2">
+                            <a href="#" class="text-black text-decoration-none"
+                              >How to easily create a website with JavaScript
+                            </a>
+                          </h5>
+
+                          <div
+                            class="mt-3 d-flex align-baseline lh-1 justify-content-between"
+                          >
+                            <span
+                              class="fs-6 d-flex gap-2 justify-content-center align-items-center"
+                            >
+                              <span
+                                class="d-flex justify-content-center align-items-center"
+                                style="width: 20px; height: 20px"
+                              >
+                                <svg
+                                  fill="#f16232"
+                                  viewBox="0 0 32 32"
+                                  version="1.1"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  class="w-100 h-100 object-fit-cover"
+                                >
+                                  <g
+                                    id="SVGRepo_bgCarrier"
+                                    stroke-width="0"
+                                  ></g>
+                                  <g
+                                    id="SVGRepo_tracerCarrier"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  ></g>
+                                  <g id="SVGRepo_iconCarrier">
+                                    <path
+                                      d="M23.313 26.102l-6.296-3.488c2.34-1.841 2.976-5.459 2.976-7.488v-4.223c0-2.796-3.715-5.91-7.447-5.91-3.73 0-7.544 3.114-7.544 5.91v4.223c0 1.845 0.78 5.576 3.144 7.472l-6.458 3.503s-1.688 0.752-1.688 1.689v2.534c0 0.933 0.757 1.689 1.688 1.689h21.625c0.931 0 1.688-0.757 1.688-1.689v-2.534c0-0.994-1.689-1.689-1.689-1.689zM23.001 30.015h-21.001v-1.788c0.143-0.105 0.344-0.226 0.502-0.298 0.047-0.021 0.094-0.044 0.139-0.070l6.459-3.503c0.589-0.32 0.979-0.912 1.039-1.579s-0.219-1.32-0.741-1.739c-1.677-1.345-2.396-4.322-2.396-5.911v-4.223c0-1.437 2.708-3.91 5.544-3.91 2.889 0 5.447 2.44 5.447 3.91v4.223c0 1.566-0.486 4.557-2.212 5.915-0.528 0.416-0.813 1.070-0.757 1.739s0.446 1.267 1.035 1.589l6.296 3.488c0.055 0.030 0.126 0.063 0.184 0.089 0.148 0.063 0.329 0.167 0.462 0.259v1.809zM30.312 21.123l-6.39-3.488c2.34-1.841 3.070-5.459 3.070-7.488v-4.223c0-2.796-3.808-5.941-7.54-5.941-2.425 0-4.904 1.319-6.347 3.007 0.823 0.051 1.73 0.052 2.514 0.302 1.054-0.821 2.386-1.308 3.833-1.308 2.889 0 5.54 2.47 5.54 3.941v4.223c0 1.566-0.58 4.557-2.305 5.915-0.529 0.416-0.813 1.070-0.757 1.739 0.056 0.67 0.445 1.267 1.035 1.589l6.39 3.488c0.055 0.030 0.126 0.063 0.184 0.089 0.148 0.063 0.329 0.167 0.462 0.259v1.779h-4.037c0.61 0.46 0.794 1.118 1.031 2h3.319c0.931 0 1.688-0.757 1.688-1.689v-2.503c-0.001-0.995-1.689-1.691-1.689-1.691z"
+                                    ></path>
+                                  </g>
+                                </svg>
+                              </span>
+                              9,300 Enrolled</span
+                            >
+                          </div>
+
+                          <div
+                            class="d-none d-xl-block mt-3 align-baseline lh-1 justify-content-between small text-muted my-3"
+                          >
+                            Description: Train to provide the highest standards
+                            of care with our Level 3 Diploma in Health and
+                            Social Care, accredited by CPD, UKRLP, AoHT, and
+                            Incensu. This online Health and <span>...</span>
+                          </div>
+                        </div>
+
+                        <!-- Card Footer -->
+                        <div
+                          class="card-footer bg-white px-0 list-view-end d-flex flex-column justify-content-xl-between border-top-0"
+                        >
+                          <div
+                            class="d-flex justify-content-xl-end justify-content-start mb-3 flex-roew-reverse flex gap-2 align-items-end w-100 fw-semibold"
+                          >
+                            <span
+                              class="main-price fs-5 text-decoration-line-through"
+                              style="line-height: 3rem"
+                              >£220</span
+                            >
+                            <span
+                              class="discounted-price fs-1 fw-bold"
+                              style="color: #f16232"
+                              >£30</span
+                            >
+                          </div>
+
+                          <div
+                            class="d-flex align-items-end justify-content-between gap-xl-2 flex-xl-column w-100 align-self-xl-end"
+                          >
+                            <a
+                              class="btn text-white"
+                              style="
+                                width: fit-content;
+                                background-color: #fe7439;
+                                padding-inline: 12px;
+                              "
+                            >
+                              View Details
+                            </a>
+                            <a
+                              href="#"
+                              class="btn btn-outline-secondary text-inherit text-decoration-none text-black"
+                            >
+                              Add to Cart
                             </a>
                           </div>
                         </div>
@@ -1006,16 +1370,120 @@
                     </div>
 
                     <div class="row my-4">
-                      <div
-                        class="col d-grid gap-2 d-md-flex justify-content-center w-100 mt-5"
+                      <ul
+                        class="pagination"
+                        style="
+                          gap: 4px;
+                          background: transparent;
+                          box-shadow: none;
+                        "
                       >
-                        <a
-                          class="btn btn-lg text-white rounded-3 px-4"
-                          style="width: fit-content; background-color: #fe7439"
-                        >
-                          View More
-                        </a>
-                      </div>
+                        <!-- Previous -->
+                        <li class="page-item disabled">
+                          <button
+                            class="page-link"
+                            style="
+                              background: transparent;
+                              border: none;
+                              box-shadow: none;
+                              color: #6c757d;
+                            "
+                          >
+                            Previous
+                          </button>
+                        </li>
+
+                        <!-- Page 1 (Active) -->
+                        <li class="page-item active">
+                          <button
+                            class="page-link"
+                            style="
+                              background: transparent;
+                              border: none;
+                              box-shadow: none;
+                              color: #000;
+                              font-weight: 600;
+                            "
+                          >
+                            1
+                          </button>
+                        </li>
+
+                        <!-- Page 2 -->
+                        <li class="page-item">
+                          <button
+                            class="page-link"
+                            style="
+                              background: transparent;
+                              border: none;
+                              box-shadow: none;
+                              color: #000;
+                            "
+                          >
+                            2
+                          </button>
+                        </li>
+
+                        <!-- Page 3 -->
+                        <li class="page-item">
+                          <button
+                            class="page-link"
+                            style="
+                              background: transparent;
+                              border: none;
+                              box-shadow: none;
+                              color: #000;
+                            "
+                          >
+                            3
+                          </button>
+                        </li>
+
+                        <!-- Page 4 -->
+                        <li class="page-item">
+                          <button
+                            class="page-link"
+                            style="
+                              background: transparent;
+                              border: none;
+                              box-shadow: none;
+                              color: #000;
+                            "
+                          >
+                            4
+                          </button>
+                        </li>
+
+                        <!-- Dots -->
+                        <li class="page-item disabled">
+                          <button
+                            class="page-link"
+                            style="
+                              background: transparent;
+                              border: none;
+                              box-shadow: none;
+                              color: #6c757d;
+                            "
+                          >
+                            ...
+                          </button>
+                        </li>
+
+                        <!-- Next -->
+                        <li class="page-item">
+                          <button
+                            class="page-link"
+                            style="
+                              background: transparent;
+                              border: none;
+                              box-shadow: none;
+                              color: #000;
+                            "
+                          >
+                            Next
+                          </button>
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
