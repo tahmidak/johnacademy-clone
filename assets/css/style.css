@@ -1,0 +1,21 @@
+body {
+  min-width: 500px;
+}
+
+/***** hero Section *****/
+.hero-container,
+.course-sec-container,
+.usp-sec-container,
+.pb-sec-container,
+.cta-h-container {
+  background: linear-gradient(284deg, #fffaed 1.37%, #ffeffb 99.14%);
+}
+.hero-brand-logo-sec {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.hero-brand-img {
+  width: 100%;
+}
+/***** End hero Section *****/
