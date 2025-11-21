@@ -19,3 +19,19 @@ body {
   width: 100%;
 }
 /***** End hero Section *****/
+
+/***** About page *****/
+/* hero section */
+@media screen and (min-width: 1200px) {
+  .list-view-img {
+    width: 25% !important;
+  }
+  .list-view-content {
+    width: 50% !important;
+  }
+  .list-view-end {
+    width: 25% !important;
+  }
+}
+
+/***** End About page *****/

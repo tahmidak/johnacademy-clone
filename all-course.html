@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Johnacademy - all course - clone</title>
+
+    <!-- boots-trap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- style.css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Offcanvas navbar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                Offcanvas
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="all-course.html"
+                    >all-course</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- hero sect -->
+      <section>
+        <div
+          class="px-4 py-5 my-5 text-center"
+          style="
+            background-image: url(assets/imgs/about-hero-bg.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+          "
+        >
+          <div class="container">
+            <div class="row justify-content-center align-items-center gap-3">
+              <h1 class="display-5 fw-bold">All Courses</h1>
+              <div class="col-md-6 mx-auto">
+                <div class="p-2">
+                  <!-- form -->
+                  <form class="row g-1 p-2 rounded-pill">
+                    <div class="col-9">
+                      <!-- input -->
+                      <div
+                        class="input-group border-md-0 border rounded-pill bg-white"
+                      >
+                        <!-- input group -->
+                        <span
+                          class="input-group-text bg-transparent border-0 pe-1 ps-md-3 ps-md-0 bg-white"
+                          id="searchJob"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="14"
+                            height="14"
+                            fill="currentColor"
+                            class="bi bi-search"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                            ></path>
+                          </svg>
+                        </span>
+                        <!-- search -->
+                        <input
+                          type="search"
+                          class="form-control rounded-2 border-0 ps-3 form-focus-none ms-2"
+                          placeholder="Job Title"
+                          aria-label="Job Title"
+                          aria-describedby="searchJob"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="col-3 text-end d-grid">
+                      <!-- button -->
+                      <button
+                        class="btn text-white rounded-end-pill rounded-3 w-100"
+                        style="background-color: #f16232; padding-inline: 12px"
+                      >
+                        Search
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div
+                class="px-lg-4 py-2 text-white rounded-3 text-uppercase"
+                style="width: fit-content; background: #f16232"
+              >
+                GET ACCESS TO 3000+ ONLINE COURSES FOR A YEAR FOR JUST £49. GET
+                NOW
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- course section -->
+      <section>
+        <div class="main-course-sec-container">
+          <div class="container">
+            <div class="row">
+              <div class="d-none d-lg-block col-lg-4">
+                <div
+                  class="rounded p-4"
+                  style="border: 1px solid #ddd"
+                >
+                  <h3 class="fs-4 fw-bold text-dark mb-3 text-center">
+                    Search by category
+                  </h3>
+
+                  <div
+                    class="w-100 mb-3"
+                    style="border-bottom: 1px solid #6b7280; height: 1px"
+                  ></div>
+
+                  <div>
+                    <div class="d-flex flex-column gap-2">
+                        
+                      <!-- Option 1 -->
+                      <label
+                        class="d-flex align-items-center px-2 py-1 rounded py-4 border-bottom"
+                        style="cursor: pointer; transition: 0.2s"
+                      >
+                        <input type="checkbox" class="form-check-input me-2" />
+                        <span class="fs-6"
+                          >Construction and Trades
+                          <span class="text-muted">(54)</span></span
+                        >
+                      </label>
+
+                      <!-- Option 1 -->
+                      <label
+                        class="d-flex align-items-center px-2 py-1 rounded py-4 border-bottom"
+                        style="cursor: pointer; transition: 0.2s"
+                      >
+                        <input type="checkbox" class="form-check-input me-2" />
+                        <span class="fs-6"
+                          >Construction and Trades
+                          <span class="text-muted">(54)</span></span
+                        >
+                      </label>
+
+                      <!-- Option 1 -->
+                      <label
+                        class="d-flex align-items-center px-2 py-1 rounded py-4 border-bottom"
+                        style="cursor: pointer; transition: 0.2s"
+                      >
+                        <input type="checkbox" class="form-check-input me-2" />
+                        <span class="fs-6"
+                          >Construction and Trades
+                          <span class="text-muted">(54)</span></span
+                        >
+                      </label>
+
+                      <!-- Option 1 -->
+                      <label
+                        class="d-flex align-items-center px-2 py-1 rounded py-4 border-bottom"
+                        style="cursor: pointer; transition: 0.2s"
+                      >
+                        <input type="checkbox" class="form-check-input me-2" />
+                        <span class="fs-6"
+                          >Construction and Trades
+                          <span class="text-muted">(54)</span></span
+                        >
+                      </label>
+
+                      <!-- Option 1 -->
+                      <label
+                        class="d-flex align-items-center px-2 py-1 rounded py-4 border-bottom"
+                        style="cursor: pointer; transition: 0.2s"
+                      >
+                        <input type="checkbox" class="form-check-input me-2" />
+                        <span class="fs-6"
+                          >Construction and Trades
+                          <span class="text-muted">(54)</span></span
+                        >
+                      </label>
+
+                      <!-- Option 1 -->
+                      <label
+                        class="d-flex align-items-center px-2 py-1 rounded py-4 border-bottom"
+                        style="cursor: pointer; transition: 0.2s"
+                      >
+                        <input type="checkbox" class="form-check-input me-2" />
+                        <span class="fs-6"
+                          >Construction and Trades
+                          <span class="text-muted">(54)</span></span
+                        >
+                      </label>
+
+                      <!-- Option 1 -->
+                      <label
+                        class="d-flex align-items-center px-2 py-1 rounded py-4 border-bottom"
+                        style="cursor: pointer; transition: 0.2s"
+                      >
+                        <input type="checkbox" class="form-check-input me-2" />
+                        <span class="fs-6"
+                          >Construction and Trades
+                          <span class="text-muted">(54)</span></span
+                        >
+                      </label>
+
+                      <!-- Option 1 -->
+                      <label
+                        class="d-flex align-items-center px-2 py-1 rounded py-4 border-bottom"
+                        style="cursor: pointer; transition: 0.2s"
+                      >
+                        <input type="checkbox" class="form-check-input me-2" />
+                        <span class="fs-6"
+                          >Construction and Trades
+                          <span class="text-muted">(54)</span></span
+                        >
+                      </label>
+
+                      <!-- Option 1 -->
+                      <label
+                        class="d-flex align-items-center px-2 py-1 rounded py-4 border-bottom"
+                        style="cursor: pointer; transition: 0.2s"
+                      >
+                        <input type="checkbox" class="form-check-input me-2" />
+                        <span class="fs-6"
+                          >Construction and Trades
+                          <span class="text-muted">(54)</span></span
+                        >
+                      </label>
+
+                    </div>
+                  </div>
+
+
+
+                  <button class="btn btn-outline-secondary w-100 mt-3">
+                    Clear filters
+                  </button>
+                </div>
+              </div>
+              <div class="col-12 col-lg-8 p-0">
+                <div class="container py-5">
+                  <div class="row my-4"></div>
+
+                  <div
+                    class="row row-cols-1 row-cols-md-2 row-cols-xl-1 justify-content-center align-items-stretch g-4"
+                  >
+                  
+                    <div
+                      class="d-flex justify-content-center align-items-stretch col"
+                    >
+                      <div class="card card-hover p-3 flex-xl-row gap-xl-2">
+                        <div class="list-view-img h-100">
+                          <a href="#" class="w-100 h-100">
+                            <img
+                              src="assets/imgs/Clinical-Coding-Course.jpg"
+                              alt="course-img"
+                              height="100%"
+                              width="100%"
+                              class="card-img-top h-100 w-100 object-fit-cover"
+                            />
+                          </a>
+                        </div>
+                        <!-- Card Body -->
+                        <div
+                          class="card-body list-view-content px-0 pb-0 text-black"
+                        >
+                          <h5 class="mb-2 text-truncate-line-2">
+                            <a href="#" class="text-black text-decoration-none"
+                              >How to easily create a website with JavaScript
+                            </a>
+                          </h5>
+
+                          <div
+                            class="mt-3 d-flex align-baseline lh-1 justify-content-between"
+                          >
+                            <span
+                              class="fs-6 d-flex gap-2 justify-content-center align-items-center"
+                            >
+                              <span
+                                class="d-flex justify-content-center align-items-center"
+                                style="width: 20px; height: 20px"
+                              >
+                                <svg
+                                  fill="#f16232"
+                                  viewBox="0 0 32 32"
+                                  version="1.1"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  class="w-100 h-100 object-fit-cover"
+                                >
+                                  <g
+                                    id="SVGRepo_bgCarrier"
+                                    stroke-width="0"
+                                  ></g>
+                                  <g
+                                    id="SVGRepo_tracerCarrier"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  ></g>
+                                  <g id="SVGRepo_iconCarrier">
+                                    <path
+                                      d="M23.313 26.102l-6.296-3.488c2.34-1.841 2.976-5.459 2.976-7.488v-4.223c0-2.796-3.715-5.91-7.447-5.91-3.73 0-7.544 3.114-7.544 5.91v4.223c0 1.845 0.78 5.576 3.144 7.472l-6.458 3.503s-1.688 0.752-1.688 1.689v2.534c0 0.933 0.757 1.689 1.688 1.689h21.625c0.931 0 1.688-0.757 1.688-1.689v-2.534c0-0.994-1.689-1.689-1.689-1.689zM23.001 30.015h-21.001v-1.788c0.143-0.105 0.344-0.226 0.502-0.298 0.047-0.021 0.094-0.044 0.139-0.070l6.459-3.503c0.589-0.32 0.979-0.912 1.039-1.579s-0.219-1.32-0.741-1.739c-1.677-1.345-2.396-4.322-2.396-5.911v-4.223c0-1.437 2.708-3.91 5.544-3.91 2.889 0 5.447 2.44 5.447 3.91v4.223c0 1.566-0.486 4.557-2.212 5.915-0.528 0.416-0.813 1.070-0.757 1.739s0.446 1.267 1.035 1.589l6.296 3.488c0.055 0.030 0.126 0.063 0.184 0.089 0.148 0.063 0.329 0.167 0.462 0.259v1.809zM30.312 21.123l-6.39-3.488c2.34-1.841 3.070-5.459 3.070-7.488v-4.223c0-2.796-3.808-5.941-7.54-5.941-2.425 0-4.904 1.319-6.347 3.007 0.823 0.051 1.73 0.052 2.514 0.302 1.054-0.821 2.386-1.308 3.833-1.308 2.889 0 5.54 2.47 5.54 3.941v4.223c0 1.566-0.58 4.557-2.305 5.915-0.529 0.416-0.813 1.070-0.757 1.739 0.056 0.67 0.445 1.267 1.035 1.589l6.39 3.488c0.055 0.030 0.126 0.063 0.184 0.089 0.148 0.063 0.329 0.167 0.462 0.259v1.779h-4.037c0.61 0.46 0.794 1.118 1.031 2h3.319c0.931 0 1.688-0.757 1.688-1.689v-2.503c-0.001-0.995-1.689-1.691-1.689-1.691z"
+                                    ></path>
+                                  </g>
+                                </svg>
+                              </span>
+                              9,300 Enrolled</span
+                            >
+                          </div>
+                          <div
+                            class="d-none d-xl-block mt-3 align-baseline lh-1 justify-content-between fs-6 my-3"
+                          >
+                            Description: Train to provide the highest standards
+                            of care with our Level 3 Diploma in Health and
+                            Social Care, accredited by CPD, UKRLP, AoHT, and
+                            Incensu. This online Health and <span>...</span>
+                          </div>
+                        </div>
+                        <!-- Card Footer -->
+                        <div
+                          class="card-footer bg-white px-0 list-view-end d-flex flex-column justify-content-xl-between border-top-0"
+                        >
+                          <div
+                            class="d-flex justify-content-xl-end justify-content-start mb-3 flex-roew-reverse flex gap-2 align-items-center w-100 fw-semibold"
+                          >
+                            <span
+                              class="main-price fs-5 text-decoration-line-through"
+                              >£220</span
+                            >
+                            <span
+                              class="discounted-price fs-1 fw-bold"
+                              style="color: #f16232"
+                              >£30</span
+                            >
+                          </div>
+
+                          <div
+                            class="d-flex align-items-end justify-content-between gap-xl-2 flex-xl-column w-100 align-self-xl-end"
+                          >
+                            <a
+                              class="btn text-white"
+                              style="
+                                width: fit-content;
+                                background-color: #fe7439;
+                                padding-inline: 12px;
+                              "
+                            >
+                              Get Enrolled
+                            </a>
+                            <a
+                              href="#"
+                              class="btn btn-outline-secondary text-inherit text-decoration-none text-black"
+                            >
+                              Get Enrolled
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="d-flex justify-content-center align-items-stretch col"
+                    >
+                      <div class="card card-hover p-3 flex-xl-row gap-xl-2">
+                        <div class="list-view-img h-100">
+                          <a href="#" class="w-100 h-100">
+                            <img
+                              src="assets/imgs/Clinical-Coding-Course.jpg"
+                              alt="course-img"
+                              height="100%"
+                              width="100%"
+                              class="card-img-top h-100 w-100 object-fit-cover"
+                            />
+                          </a>
+                        </div>
+                        <!-- Card Body -->
+                        <div
+                          class="card-body list-view-content px-0 pb-0 text-black"
+                        >
+                          <h5 class="mb-2 text-truncate-line-2">
+                            <a href="#" class="text-black text-decoration-none"
+                              >How to easily create a website with JavaScript
+                            </a>
+                          </h5>
+
+                          <div
+                            class="mt-3 d-flex align-baseline lh-1 justify-content-between"
+                          >
+                            <span
+                              class="fs-6 d-flex gap-2 justify-content-center align-items-center"
+                            >
+                              <span
+                                class="d-flex justify-content-center align-items-center"
+                                style="width: 20px; height: 20px"
+                              >
+                                <svg
+                                  fill="#f16232"
+                                  viewBox="0 0 32 32"
+                                  version="1.1"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  class="w-100 h-100 object-fit-cover"
+                                >
+                                  <g
+                                    id="SVGRepo_bgCarrier"
+                                    stroke-width="0"
+                                  ></g>
+                                  <g
+                                    id="SVGRepo_tracerCarrier"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  ></g>
+                                  <g id="SVGRepo_iconCarrier">
+                                    <path
+                                      d="M23.313 26.102l-6.296-3.488c2.34-1.841 2.976-5.459 2.976-7.488v-4.223c0-2.796-3.715-5.91-7.447-5.91-3.73 0-7.544 3.114-7.544 5.91v4.223c0 1.845 0.78 5.576 3.144 7.472l-6.458 3.503s-1.688 0.752-1.688 1.689v2.534c0 0.933 0.757 1.689 1.688 1.689h21.625c0.931 0 1.688-0.757 1.688-1.689v-2.534c0-0.994-1.689-1.689-1.689-1.689zM23.001 30.015h-21.001v-1.788c0.143-0.105 0.344-0.226 0.502-0.298 0.047-0.021 0.094-0.044 0.139-0.070l6.459-3.503c0.589-0.32 0.979-0.912 1.039-1.579s-0.219-1.32-0.741-1.739c-1.677-1.345-2.396-4.322-2.396-5.911v-4.223c0-1.437 2.708-3.91 5.544-3.91 2.889 0 5.447 2.44 5.447 3.91v4.223c0 1.566-0.486 4.557-2.212 5.915-0.528 0.416-0.813 1.070-0.757 1.739s0.446 1.267 1.035 1.589l6.296 3.488c0.055 0.030 0.126 0.063 0.184 0.089 0.148 0.063 0.329 0.167 0.462 0.259v1.809zM30.312 21.123l-6.39-3.488c2.34-1.841 3.070-5.459 3.070-7.488v-4.223c0-2.796-3.808-5.941-7.54-5.941-2.425 0-4.904 1.319-6.347 3.007 0.823 0.051 1.73 0.052 2.514 0.302 1.054-0.821 2.386-1.308 3.833-1.308 2.889 0 5.54 2.47 5.54 3.941v4.223c0 1.566-0.58 4.557-2.305 5.915-0.529 0.416-0.813 1.070-0.757 1.739 0.056 0.67 0.445 1.267 1.035 1.589l6.39 3.488c0.055 0.030 0.126 0.063 0.184 0.089 0.148 0.063 0.329 0.167 0.462 0.259v1.779h-4.037c0.61 0.46 0.794 1.118 1.031 2h3.319c0.931 0 1.688-0.757 1.688-1.689v-2.503c-0.001-0.995-1.689-1.691-1.689-1.691z"
+                                    ></path>
+                                  </g>
+                                </svg>
+                              </span>
+                              9,300 Enrolled</span
+                            >
+                          </div>
+                          <div
+                            class="d-none d-xl-block mt-3 align-baseline lh-1 justify-content-between fs-6 my-3"
+                          >
+                            Description: Train to provide the highest standards
+                            of care with our Level 3 Diploma in Health and
+                            Social Care, accredited by CPD, UKRLP, AoHT, and
+                            Incensu. This online Health and <span>...</span>
+                          </div>
+                        </div>
+                        <!-- Card Footer -->
+                        <div
+                          class="card-footer bg-white px-0 list-view-end d-flex flex-column justify-content-xl-between border-top-0"
+                        >
+                          <div
+                            class="d-flex justify-content-xl-end justify-content-start mb-3 flex-roew-reverse flex gap-2 align-items-center w-100 fw-semibold"
+                          >
+                            <span
+                              class="main-price fs-5 text-decoration-line-through"
+                              >£220</span
+                            >
+                            <span
+                              class="discounted-price fs-1 fw-bold"
+                              style="color: #f16232"
+                              >£30</span
+                            >
+                          </div>
+
+                          <div
+                            class="d-flex align-items-end justify-content-between gap-xl-2 flex-xl-column w-100 align-self-xl-end"
+                          >
+                            <a
+                              class="btn text-white"
+                              style="
+                                width: fit-content;
+                                background-color: #fe7439;
+                                padding-inline: 12px;
+                              "
+                            >
+                              Get Enrolled
+                            </a>
+                            <a
+                              href="#"
+                              class="btn btn-outline-secondary text-inherit text-decoration-none text-black"
+                            >
+                              Get Enrolled
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="d-flex justify-content-center align-items-stretch col"
+                    >
+                      <div class="card card-hover p-3 flex-xl-row gap-xl-2">
+                        <div class="list-view-img h-100">
+                          <a href="#" class="w-100 h-100">
+                            <img
+                              src="assets/imgs/Clinical-Coding-Course.jpg"
+                              alt="course-img"
+                              height="100%"
+                              width="100%"
+                              class="card-img-top h-100 w-100 object-fit-cover"
+                            />
+                          </a>
+                        </div>
+                        <!-- Card Body -->
+                        <div
+                          class="card-body list-view-content px-0 pb-0 text-black"
+                        >
+                          <h5 class="mb-2 text-truncate-line-2">
+                            <a href="#" class="text-black text-decoration-none"
+                              >How to easily create a website with JavaScript
+                            </a>
+                          </h5>
+
+                          <div
+                            class="mt-3 d-flex align-baseline lh-1 justify-content-between"
+                          >
+                            <span
+                              class="fs-6 d-flex gap-2 justify-content-center align-items-center"
+                            >
+                              <span
+                                class="d-flex justify-content-center align-items-center"
+                                style="width: 20px; height: 20px"
+                              >
+                                <svg
+                                  fill="#f16232"
+                                  viewBox="0 0 32 32"
+                                  version="1.1"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  class="w-100 h-100 object-fit-cover"
+                                >
+                                  <g
+                                    id="SVGRepo_bgCarrier"
+                                    stroke-width="0"
+                                  ></g>
+                                  <g
+                                    id="SVGRepo_tracerCarrier"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  ></g>
+                                  <g id="SVGRepo_iconCarrier">
+                                    <path
+                                      d="M23.313 26.102l-6.296-3.488c2.34-1.841 2.976-5.459 2.976-7.488v-4.223c0-2.796-3.715-5.91-7.447-5.91-3.73 0-7.544 3.114-7.544 5.91v4.223c0 1.845 0.78 5.576 3.144 7.472l-6.458 3.503s-1.688 0.752-1.688 1.689v2.534c0 0.933 0.757 1.689 1.688 1.689h21.625c0.931 0 1.688-0.757 1.688-1.689v-2.534c0-0.994-1.689-1.689-1.689-1.689zM23.001 30.015h-21.001v-1.788c0.143-0.105 0.344-0.226 0.502-0.298 0.047-0.021 0.094-0.044 0.139-0.070l6.459-3.503c0.589-0.32 0.979-0.912 1.039-1.579s-0.219-1.32-0.741-1.739c-1.677-1.345-2.396-4.322-2.396-5.911v-4.223c0-1.437 2.708-3.91 5.544-3.91 2.889 0 5.447 2.44 5.447 3.91v4.223c0 1.566-0.486 4.557-2.212 5.915-0.528 0.416-0.813 1.070-0.757 1.739s0.446 1.267 1.035 1.589l6.296 3.488c0.055 0.030 0.126 0.063 0.184 0.089 0.148 0.063 0.329 0.167 0.462 0.259v1.809zM30.312 21.123l-6.39-3.488c2.34-1.841 3.070-5.459 3.070-7.488v-4.223c0-2.796-3.808-5.941-7.54-5.941-2.425 0-4.904 1.319-6.347 3.007 0.823 0.051 1.73 0.052 2.514 0.302 1.054-0.821 2.386-1.308 3.833-1.308 2.889 0 5.54 2.47 5.54 3.941v4.223c0 1.566-0.58 4.557-2.305 5.915-0.529 0.416-0.813 1.070-0.757 1.739 0.056 0.67 0.445 1.267 1.035 1.589l6.39 3.488c0.055 0.030 0.126 0.063 0.184 0.089 0.148 0.063 0.329 0.167 0.462 0.259v1.779h-4.037c0.61 0.46 0.794 1.118 1.031 2h3.319c0.931 0 1.688-0.757 1.688-1.689v-2.503c-0.001-0.995-1.689-1.691-1.689-1.691z"
+                                    ></path>
+                                  </g>
+                                </svg>
+                              </span>
+                              9,300 Enrolled</span
+                            >
+                          </div>
+                          <div
+                            class="d-none d-xl-block mt-3 align-baseline lh-1 justify-content-between fs-6 my-3"
+                          >
+                            Description: Train to provide the highest standards
+                            of care with our Level 3 Diploma in Health and
+                            Social Care, accredited by CPD, UKRLP, AoHT, and
+                            Incensu. This online Health and <span>...</span>
+                          </div>
+                        </div>
+                        <!-- Card Footer -->
+                        <div
+                          class="card-footer bg-white px-0 list-view-end d-flex flex-column justify-content-xl-between border-top-0"
+                        >
+                          <div
+                            class="d-flex justify-content-xl-end justify-content-start mb-3 flex-roew-reverse flex gap-2 align-items-center w-100 fw-semibold"
+                          >
+                            <span
+                              class="main-price fs-5 text-decoration-line-through"
+                              >£220</span
+                            >
+                            <span
+                              class="discounted-price fs-1 fw-bold"
+                              style="color: #f16232"
+                              >£30</span
+                            >
+                          </div>
+
+                          <div
+                            class="d-flex align-items-end justify-content-between gap-xl-2 flex-xl-column w-100 align-self-xl-end"
+                          >
+                            <a
+                              class="btn text-white"
+                              style="
+                                width: fit-content;
+                                background-color: #fe7439;
+                                padding-inline: 12px;
+                              "
+                            >
+                              Get Enrolled
+                            </a>
+                            <a
+                              href="#"
+                              class="btn btn-outline-secondary text-inherit text-decoration-none text-black"
+                            >
+                              Get Enrolled
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="d-flex justify-content-center align-items-stretch col"
+                    >
+                      <div class="card card-hover p-3 flex-xl-row gap-xl-2">
+                        <div class="list-view-img h-100">
+                          <a href="#" class="w-100 h-100">
+                            <img
+                              src="assets/imgs/Clinical-Coding-Course.jpg"
+                              alt="course-img"
+                              height="100%"
+                              width="100%"
+                              class="card-img-top h-100 w-100 object-fit-cover"
+                            />
+                          </a>
+                        </div>
+                        <!-- Card Body -->
+                        <div
+                          class="card-body list-view-content px-0 pb-0 text-black"
+                        >
+                          <h5 class="mb-2 text-truncate-line-2">
+                            <a href="#" class="text-black text-decoration-none"
+                              >How to easily create a website with JavaScript
+                            </a>
+                          </h5>
+
+                          <div
+                            class="mt-3 d-flex align-baseline lh-1 justify-content-between"
+                          >
+                            <span
+                              class="fs-6 d-flex gap-2 justify-content-center align-items-center"
+                            >
+                              <span
+                                class="d-flex justify-content-center align-items-center"
+                                style="width: 20px; height: 20px"
+                              >
+                                <svg
+                                  fill="#f16232"
+                                  viewBox="0 0 32 32"
+                                  version="1.1"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  class="w-100 h-100 object-fit-cover"
+                                >
+                                  <g
+                                    id="SVGRepo_bgCarrier"
+                                    stroke-width="0"
+                                  ></g>
+                                  <g
+                                    id="SVGRepo_tracerCarrier"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  ></g>
+                                  <g id="SVGRepo_iconCarrier">
+                                    <path
+                                      d="M23.313 26.102l-6.296-3.488c2.34-1.841 2.976-5.459 2.976-7.488v-4.223c0-2.796-3.715-5.91-7.447-5.91-3.73 0-7.544 3.114-7.544 5.91v4.223c0 1.845 0.78 5.576 3.144 7.472l-6.458 3.503s-1.688 0.752-1.688 1.689v2.534c0 0.933 0.757 1.689 1.688 1.689h21.625c0.931 0 1.688-0.757 1.688-1.689v-2.534c0-0.994-1.689-1.689-1.689-1.689zM23.001 30.015h-21.001v-1.788c0.143-0.105 0.344-0.226 0.502-0.298 0.047-0.021 0.094-0.044 0.139-0.070l6.459-3.503c0.589-0.32 0.979-0.912 1.039-1.579s-0.219-1.32-0.741-1.739c-1.677-1.345-2.396-4.322-2.396-5.911v-4.223c0-1.437 2.708-3.91 5.544-3.91 2.889 0 5.447 2.44 5.447 3.91v4.223c0 1.566-0.486 4.557-2.212 5.915-0.528 0.416-0.813 1.070-0.757 1.739s0.446 1.267 1.035 1.589l6.296 3.488c0.055 0.030 0.126 0.063 0.184 0.089 0.148 0.063 0.329 0.167 0.462 0.259v1.809zM30.312 21.123l-6.39-3.488c2.34-1.841 3.070-5.459 3.070-7.488v-4.223c0-2.796-3.808-5.941-7.54-5.941-2.425 0-4.904 1.319-6.347 3.007 0.823 0.051 1.73 0.052 2.514 0.302 1.054-0.821 2.386-1.308 3.833-1.308 2.889 0 5.54 2.47 5.54 3.941v4.223c0 1.566-0.58 4.557-2.305 5.915-0.529 0.416-0.813 1.070-0.757 1.739 0.056 0.67 0.445 1.267 1.035 1.589l6.39 3.488c0.055 0.030 0.126 0.063 0.184 0.089 0.148 0.063 0.329 0.167 0.462 0.259v1.779h-4.037c0.61 0.46 0.794 1.118 1.031 2h3.319c0.931 0 1.688-0.757 1.688-1.689v-2.503c-0.001-0.995-1.689-1.691-1.689-1.691z"
+                                    ></path>
+                                  </g>
+                                </svg>
+                              </span>
+                              9,300 Enrolled</span
+                            >
+                          </div>
+                          <div
+                            class="d-none d-xl-block mt-3 align-baseline lh-1 justify-content-between fs-6 my-3"
+                          >
+                            Description: Train to provide the highest standards
+                            of care with our Level 3 Diploma in Health and
+                            Social Care, accredited by CPD, UKRLP, AoHT, and
+                            Incensu. This online Health and <span>...</span>
+                          </div>
+                        </div>
+                        <!-- Card Footer -->
+                        <div
+                          class="card-footer bg-white px-0 list-view-end d-flex flex-column justify-content-xl-between border-top-0"
+                        >
+                          <div
+                            class="d-flex justify-content-xl-end justify-content-start mb-3 flex-roew-reverse flex gap-2 align-items-center w-100 fw-semibold"
+                          >
+                            <span
+                              class="main-price fs-5 text-decoration-line-through"
+                              >£220</span
+                            >
+                            <span
+                              class="discounted-price fs-1 fw-bold"
+                              style="color: #f16232"
+                              >£30</span
+                            >
+                          </div>
+
+                          <div
+                            class="d-flex align-items-end justify-content-between gap-xl-2 flex-xl-column w-100 align-self-xl-end"
+                          >
+                            <a
+                              class="btn text-white"
+                              style="
+                                width: fit-content;
+                                background-color: #fe7439;
+                                padding-inline: 12px;
+                              "
+                            >
+                              Get Enrolled
+                            </a>
+                            <a
+                              href="#"
+                              class="btn btn-outline-secondary text-inherit text-decoration-none text-black"
+                            >
+                              Get Enrolled
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="d-flex justify-content-center align-items-stretch col"
+                    >
+                      <div class="card card-hover p-3 flex-xl-row gap-xl-2">
+                        <div class="list-view-img h-100">
+                          <a href="#" class="w-100 h-100">
+                            <img
+                              src="assets/imgs/Clinical-Coding-Course.jpg"
+                              alt="course-img"
+                              height="100%"
+                              width="100%"
+                              class="card-img-top h-100 w-100 object-fit-cover"
+                            />
+                          </a>
+                        </div>
+                        <!-- Card Body -->
+                        <div
+                          class="card-body list-view-content px-0 pb-0 text-black"
+                        >
+                          <h5 class="mb-2 text-truncate-line-2">
+                            <a href="#" class="text-black text-decoration-none"
+                              >How to easily create a website with JavaScript
+                            </a>
+                          </h5>
+
+                          <div
+                            class="mt-3 d-flex align-baseline lh-1 justify-content-between"
+                          >
+                            <span
+                              class="fs-6 d-flex gap-2 justify-content-center align-items-center"
+                            >
+                              <span
+                                class="d-flex justify-content-center align-items-center"
+                                style="width: 20px; height: 20px"
+                              >
+                                <svg
+                                  fill="#f16232"
+                                  viewBox="0 0 32 32"
+                                  version="1.1"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  class="w-100 h-100 object-fit-cover"
+                                >
+                                  <g
+                                    id="SVGRepo_bgCarrier"
+                                    stroke-width="0"
+                                  ></g>
+                                  <g
+                                    id="SVGRepo_tracerCarrier"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  ></g>
+                                  <g id="SVGRepo_iconCarrier">
+                                    <path
+                                      d="M23.313 26.102l-6.296-3.488c2.34-1.841 2.976-5.459 2.976-7.488v-4.223c0-2.796-3.715-5.91-7.447-5.91-3.73 0-7.544 3.114-7.544 5.91v4.223c0 1.845 0.78 5.576 3.144 7.472l-6.458 3.503s-1.688 0.752-1.688 1.689v2.534c0 0.933 0.757 1.689 1.688 1.689h21.625c0.931 0 1.688-0.757 1.688-1.689v-2.534c0-0.994-1.689-1.689-1.689-1.689zM23.001 30.015h-21.001v-1.788c0.143-0.105 0.344-0.226 0.502-0.298 0.047-0.021 0.094-0.044 0.139-0.070l6.459-3.503c0.589-0.32 0.979-0.912 1.039-1.579s-0.219-1.32-0.741-1.739c-1.677-1.345-2.396-4.322-2.396-5.911v-4.223c0-1.437 2.708-3.91 5.544-3.91 2.889 0 5.447 2.44 5.447 3.91v4.223c0 1.566-0.486 4.557-2.212 5.915-0.528 0.416-0.813 1.070-0.757 1.739s0.446 1.267 1.035 1.589l6.296 3.488c0.055 0.030 0.126 0.063 0.184 0.089 0.148 0.063 0.329 0.167 0.462 0.259v1.809zM30.312 21.123l-6.39-3.488c2.34-1.841 3.070-5.459 3.070-7.488v-4.223c0-2.796-3.808-5.941-7.54-5.941-2.425 0-4.904 1.319-6.347 3.007 0.823 0.051 1.73 0.052 2.514 0.302 1.054-0.821 2.386-1.308 3.833-1.308 2.889 0 5.54 2.47 5.54 3.941v4.223c0 1.566-0.58 4.557-2.305 5.915-0.529 0.416-0.813 1.070-0.757 1.739 0.056 0.67 0.445 1.267 1.035 1.589l6.39 3.488c0.055 0.030 0.126 0.063 0.184 0.089 0.148 0.063 0.329 0.167 0.462 0.259v1.779h-4.037c0.61 0.46 0.794 1.118 1.031 2h3.319c0.931 0 1.688-0.757 1.688-1.689v-2.503c-0.001-0.995-1.689-1.691-1.689-1.691z"
+                                    ></path>
+                                  </g>
+                                </svg>
+                              </span>
+                              9,300 Enrolled</span
+                            >
+                          </div>
+                          <div
+                            class="d-none d-xl-block mt-3 align-baseline lh-1 justify-content-between fs-6 my-3"
+                          >
+                            Description: Train to provide the highest standards
+                            of care with our Level 3 Diploma in Health and
+                            Social Care, accredited by CPD, UKRLP, AoHT, and
+                            Incensu. This online Health and <span>...</span>
+                          </div>
+                        </div>
+                        <!-- Card Footer -->
+                        <div
+                          class="card-footer bg-white px-0 list-view-end d-flex flex-column justify-content-xl-between border-top-0"
+                        >
+                          <div
+                            class="d-flex justify-content-xl-end justify-content-start mb-3 flex-roew-reverse flex gap-2 align-items-center w-100 fw-semibold"
+                          >
+                            <span
+                              class="main-price fs-5 text-decoration-line-through"
+                              >£220</span
+                            >
+                            <span
+                              class="discounted-price fs-1 fw-bold"
+                              style="color: #f16232"
+                              >£30</span
+                            >
+                          </div>
+
+                          <div
+                            class="d-flex align-items-end justify-content-between gap-xl-2 flex-xl-column w-100 align-self-xl-end"
+                          >
+                            <a
+                              class="btn text-white"
+                              style="
+                                width: fit-content;
+                                background-color: #fe7439;
+                                padding-inline: 12px;
+                              "
+                            >
+                              Get Enrolled
+                            </a>
+                            <a
+                              href="#"
+                              class="btn btn-outline-secondary text-inherit text-decoration-none text-black"
+                            >
+                              Get Enrolled
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="d-flex justify-content-center align-items-stretch col"
+                    >
+                      <div class="card card-hover p-3 flex-xl-row gap-xl-2">
+                        <div class="list-view-img h-100">
+                          <a href="#" class="w-100 h-100">
+                            <img
+                              src="assets/imgs/Clinical-Coding-Course.jpg"
+                              alt="course-img"
+                              height="100%"
+                              width="100%"
+                              class="card-img-top h-100 w-100 object-fit-cover"
+                            />
+                          </a>
+                        </div>
+                        <!-- Card Body -->
+                        <div
+                          class="card-body list-view-content px-0 pb-0 text-black"
+                        >
+                          <h5 class="mb-2 text-truncate-line-2">
+                            <a href="#" class="text-black text-decoration-none"
+                              >How to easily create a website with JavaScript
+                            </a>
+                          </h5>
+
+                          <div
+                            class="mt-3 d-flex align-baseline lh-1 justify-content-between"
+                          >
+                            <span
+                              class="fs-6 d-flex gap-2 justify-content-center align-items-center"
+                            >
+                              <span
+                                class="d-flex justify-content-center align-items-center"
+                                style="width: 20px; height: 20px"
+                              >
+                                <svg
+                                  fill="#f16232"
+                                  viewBox="0 0 32 32"
+                                  version="1.1"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  class="w-100 h-100 object-fit-cover"
+                                >
+                                  <g
+                                    id="SVGRepo_bgCarrier"
+                                    stroke-width="0"
+                                  ></g>
+                                  <g
+                                    id="SVGRepo_tracerCarrier"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  ></g>
+                                  <g id="SVGRepo_iconCarrier">
+                                    <path
+                                      d="M23.313 26.102l-6.296-3.488c2.34-1.841 2.976-5.459 2.976-7.488v-4.223c0-2.796-3.715-5.91-7.447-5.91-3.73 0-7.544 3.114-7.544 5.91v4.223c0 1.845 0.78 5.576 3.144 7.472l-6.458 3.503s-1.688 0.752-1.688 1.689v2.534c0 0.933 0.757 1.689 1.688 1.689h21.625c0.931 0 1.688-0.757 1.688-1.689v-2.534c0-0.994-1.689-1.689-1.689-1.689zM23.001 30.015h-21.001v-1.788c0.143-0.105 0.344-0.226 0.502-0.298 0.047-0.021 0.094-0.044 0.139-0.070l6.459-3.503c0.589-0.32 0.979-0.912 1.039-1.579s-0.219-1.32-0.741-1.739c-1.677-1.345-2.396-4.322-2.396-5.911v-4.223c0-1.437 2.708-3.91 5.544-3.91 2.889 0 5.447 2.44 5.447 3.91v4.223c0 1.566-0.486 4.557-2.212 5.915-0.528 0.416-0.813 1.070-0.757 1.739s0.446 1.267 1.035 1.589l6.296 3.488c0.055 0.030 0.126 0.063 0.184 0.089 0.148 0.063 0.329 0.167 0.462 0.259v1.809zM30.312 21.123l-6.39-3.488c2.34-1.841 3.070-5.459 3.070-7.488v-4.223c0-2.796-3.808-5.941-7.54-5.941-2.425 0-4.904 1.319-6.347 3.007 0.823 0.051 1.73 0.052 2.514 0.302 1.054-0.821 2.386-1.308 3.833-1.308 2.889 0 5.54 2.47 5.54 3.941v4.223c0 1.566-0.58 4.557-2.305 5.915-0.529 0.416-0.813 1.070-0.757 1.739 0.056 0.67 0.445 1.267 1.035 1.589l6.39 3.488c0.055 0.030 0.126 0.063 0.184 0.089 0.148 0.063 0.329 0.167 0.462 0.259v1.779h-4.037c0.61 0.46 0.794 1.118 1.031 2h3.319c0.931 0 1.688-0.757 1.688-1.689v-2.503c-0.001-0.995-1.689-1.691-1.689-1.691z"
+                                    ></path>
+                                  </g>
+                                </svg>
+                              </span>
+                              9,300 Enrolled</span
+                            >
+                          </div>
+                          <div
+                            class="d-none d-xl-block mt-3 align-baseline lh-1 justify-content-between fs-6 my-3"
+                          >
+                            Description: Train to provide the highest standards
+                            of care with our Level 3 Diploma in Health and
+                            Social Care, accredited by CPD, UKRLP, AoHT, and
+                            Incensu. This online Health and <span>...</span>
+                          </div>
+                        </div>
+                        <!-- Card Footer -->
+                        <div
+                          class="card-footer bg-white px-0 list-view-end d-flex flex-column justify-content-xl-between border-top-0"
+                        >
+                          <div
+                            class="d-flex justify-content-xl-end justify-content-start mb-3 flex-roew-reverse flex gap-2 align-items-center w-100 fw-semibold"
+                          >
+                            <span
+                              class="main-price fs-5 text-decoration-line-through"
+                              >£220</span
+                            >
+                            <span
+                              class="discounted-price fs-1 fw-bold"
+                              style="color: #f16232"
+                              >£30</span
+                            >
+                          </div>
+
+                          <div
+                            class="d-flex align-items-end justify-content-between gap-xl-2 flex-xl-column w-100 align-self-xl-end"
+                          >
+                            <a
+                              class="btn text-white"
+                              style="
+                                width: fit-content;
+                                background-color: #fe7439;
+                                padding-inline: 12px;
+                              "
+                            >
+                              Get Enrolled
+                            </a>
+                            <a
+                              href="#"
+                              class="btn btn-outline-secondary text-inherit text-decoration-none text-black"
+                            >
+                              Get Enrolled
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row my-4">
+                      <div
+                        class="col d-grid gap-2 d-md-flex justify-content-center w-100 mt-5"
+                      >
+                        <a
+                          class="btn btn-lg text-white rounded-3 px-4"
+                          style="width: fit-content; background-color: #fe7439"
+                        >
+                          View More
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
+
+    <!-- Bootstrap Toast (auto hide in 3s) -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div
+        id="copyToast"
+        class="toast align-items-center text-white bg-success border-0"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+        data-bs-delay="3000"
+      >
+        <div class="d-flex">
+          <div class="toast-body">Coupon code copied!</div>
+          <button
+            type="button"
+            class="btn-close btn-close-white me-2 m-auto"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
